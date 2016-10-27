@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相册</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/browse.css" media="screen" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        function Forward()
+        {
+            document.getElementById("bigpic").setAttribute("src","images/slider-2.jpg")
+        }
+        function Backward()
+        {
+            document.getElementById("bigpic").setAttribute("src","images/slider-1.jpg")
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+    <header>
+        <nav class="slide">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/slider-1.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>I LOVE YOU</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider-2.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>I LOVE YOU</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider-3.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>I LOVE YOU</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="clr-1">Home</a></li>
+                <li class="current"><a href="gallery.html" class="clr-2">Gallery</a></li>
+                <li><a href="blog.html" class="clr-3">Blog</a></li>
+                <li><a href="contacts.html" class="clr-4">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="galleryMainBk">
+        <section id="content"><div class="icontent"></div>
+        <nav class="funcbtn">
+            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#uploadpic">
+                <span class="glyphicon glyphicon-plus"></span>
+                <a href="uploadpic.html" target="_blank">上传照片</a>
+            </button>
+        </nav>
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img data-src="holder.js/100%x180" src="images/gallery-1.jpg" alt="..." data-toggle="modal" data-target="#myModal">
+                </a>
+            </div>
+        </div>
+    </section>
+        <nav class="splitpage">
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+         </nav>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 100%;height: 70%;background:black">
+        <div class="modal-content" style="width: 100%;height: 100%;background: transparent">
+            <div class="modal-body" style="width:100%;height: 100%;background: transparent">
+                <img  id="bigpic" src="images/gallery-1.jpg" style="width: auto;height: 100%;clear:both;display:block;margin:auto"/>
+                <button type="button" class="btn btn-default btn-lg" id="left-btn" style="background: transparent" onclick="Forward()">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </button>
+                <button type="button" class="btn btn-default btn-lg" id="right-btn" style="background: transparent" onclick="Backward()">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
