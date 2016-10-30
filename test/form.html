@@ -1,63 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="../css/browse.css" type="text/css">
-    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
-    <script src="../js/jquery-3.1.1.min.js"></script>
-    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script>
-        function Forward()
-        {
-            document.getElementById("bigpic").setAttribute("src","../images/slider-2.jpg")
-        }
-        function Backward()
-        {
-            document.getElementById("bigpic").setAttribute("src","../images/slider-1.jpg")
-        }
-    </script>
+<html lang="en"><head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/love_header.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700">
+    <link rel="stylesheet" type="text/css" media="screen" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
 </head>
 <body>
-<div class="row">
-    <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" src="../images/gallery-1.jpg" alt="" data-toggle="modal" data-target="#myModal">
-        </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" src="../images/gallery-1.jpg" alt="" data-toggle="modal" data-target="#myModal">
-        </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" src="../images/gallery-1.jpg" alt="" data-toggle="modal" data-target="#myModal">
-        </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" src="../images/gallery-1.jpg" alt="" data-toggle="modal" data-target="#myModal">
-        </a>
-    </div>
+<div class="main">
+    <header id="header">
+        <nav class="slide">
+            <div id="headerNavCarousel" data-ride="carousel">
+                <ol>
+                    <li data-target="#headerNavCarousel" data-slide-to="0"></li>
+                    <li data-target="#headerNavCarousel" data-slide-to="1"></li>
+                    <li data-target="#headerNavCarousel" data-slide-to="2"></li>
+                    <li data-target="#headerNavCarousel" data-slide-to="3"></li>
+                </ol>
+                <div role="listbox">
+                    <div>
+                        <img src="../images/slider-1.jpg">
+                        <div><h3>I love you!!!</h3></div>
+                    </div>
+                    <div>
+                        <img src="../images/slider-2.jpg">
+                        <div><h3>I love you!!!</h3></div>
+                    </div>
+                    <div>
+                        <img src="../images/slider-3.jpg">
+                        <div><h3>I love you!!!</h3></div>
+                    </div>
+                    <div>
+                        <img src="../images/slider-6.jpg">
+                        <div><h3>I love you!!!</h3></div>
+                    </div>
+                </div>
+                <a href="#headerNavCarousel" role="button" data-slide="prev">
+                    <span></span><span>Previous</span></a>
+                <a href="#headerNavCarousel" role="button" data-slide="next"><span></span><span>Next</span></a></div><ul><li><a href="index.html">Home</a></li><li><a href="gallery.html" target="_blank">Gallery</a></li><li><a href="blog.html" target="_blank">Blog</a></li><li><a href="contacts.html" target="_blank">Contacts</a></li></ul></nav></header>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" style="width: 100%;height: 70%;background:black">
-        <div class="modal-content" style="width: 100%;height: 100%;background: transparent">
-            <div class="modal-body" style="width:100%;height: 100%;background: transparent">
-                <img  id="bigpic" src="../images/gallery-1.jpg" style="width: auto;height: 100%;clear:both;display:block;margin:auto"/>
-                <button type="button" class="btn btn-default btn-lg" id="left-btn" style="background: transparent" onclick="Forward()">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </button>
-                <button type="button" class="btn btn-default btn-lg" id="right-btn" style="background: transparent" onclick="Backward()">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="../react/react.min.js"></script>
+<script src="../react/react-dom.min.js"></script>
+<script src="../react/browser.min.js"></script>
+<script type="text/babel" src="../js_react/header.js"></script>
 
-</body>
-</html>
+</body></html>

@@ -1,51 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
-    <script src="../js/jquery-3.1.1.min.js"></script>
-    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/love_header.png" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700">
+    <link rel="stylesheet" type="text/css" media="screen" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
 </head>
 <body>
-<!-- Small modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">创建相册</button>
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <form role="form">
-                <div class="form-group">
-                    <label for="AlbumName">相册名称</label>
-                    <input type="text" class="form-control" id="AlbumName" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="AlbumDescription">相册描述</label>
-                    <textarea class="form-control" rows="3" id="AlbumDescription"></textarea>
-                </div>
-                <div class="form-group">
-                    <label>主题：</label>
-                    <label class="radio-inline">
-                        <input type="radio" name="AlbumTheme" id="travel" value="travel"> 旅游
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="AlbumTheme" id="food" value="food"> 美食
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="AlbumTheme" id="people" value="people"> 人物
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label for="limit">权限：</label>
-                    <select id="limit">
-                        <option>所有人可见</option>
-                        <option>仅自己可见</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-default">确定</button>
-            </form>
-        </div>
-    </div>
-</div>
+    <section class="main">
+        <header id="header"></header>
+        <section id="content"></section>
+        <footer id="footer"></footer>
+    </section>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../react/react.min.js"></script>
+    <script src="../react/react-dom.min.js"></script>
+    <script src="../react/browser.min.js"></script>
+    <script type="text/babel" src="../js_react/header.js"></script>
+    <script type="text/babel" src="../js_react/footer.js"></script>
 </body>
 </html>

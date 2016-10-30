@@ -1,0 +1,34 @@
+.pic-modal .modal-dialog{
+    width: 100%;
+    height: 70%;
+    margin-top: 10%;
+    background:black
+}
+.pic-modal .modal-content,.modal-body{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    margin: auto;
+}
+
+#bigpic{
+    width: auto;
+    height: 100%;
+    clear:both;
+    display:block;
+    margin:auto;
+}
+
+#left-btn{
+    position: fixed;
+    left: 1%;
+    top: 45%;
+    background: red;
+}
+
+#right-btn{
+    position: fixed;
+    right: 1%;
+    top: 45%;
+    background: transparent;
+}

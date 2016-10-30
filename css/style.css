@@ -7,9 +7,24 @@ body {
 	background: #ffffff;
 }
 
-.main {width:100%; background:url(../images/bg.jpg) center 0 repeat-y;}
+.main {
+    width:100%;
+    background:url(../images/bg.jpg) center 0 repeat-y;
+    margin-top: -1.2em;
+}
 
-.icontent {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:0 10000% 0 0;overflow:hidden;padding:0}
+.icontent {
+    border:0;
+    float:right;
+    background:#fff;
+    color:#f00;
+    width:50%;
+    line-height:10px;
+    font-size:10px;
+    margin:0 10000% 0 0;
+    overflow:hidden;
+    padding:0
+}
 
 .container_one {margin-left:auto;margin-right:auto;width:960px}
 
@@ -136,10 +151,6 @@ dl dd a:hover {}
 .slider { width:920px; height:429px; margin:0 auto; position:relative; z-index:2; }
 .items { display:none;}
 .pagination { display:none; }
-.prev {position:absolute; top:242px; left:49px; display:block; width:61px; height:70px; background:url(../images/prev.png) 0 0 no-repeat; z-index:99;}
-.prev:hover {background-position:0 bottom;}
-.next {position:absolute; top:242px; right:49px; display:block; width:61px; height:70px; background:url(../images/next.png) 0 bottom no-repeat; z-index:99;}
-.next:hover {background-position:0 0;}
 .banner{display:none;}
 
 .gallery {width:920px; height:429px; margin:0 auto; position:relative; z-index:2; }
@@ -173,4 +184,10 @@ ul.albumPic li{width:45%;float:left;}
 
 .galleryMainBk{
 	background:#5e5e5e;
+}
+
+.head-slider img{
+    height: 100%;
+    width: auto;
+    margin: auto;
 }
